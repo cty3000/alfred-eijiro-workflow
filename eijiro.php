@@ -28,7 +28,7 @@ if ($item_number != '0') {
         // 文頭文末の空白を除去
         $title = trim($title);
         // 連続する空白を1つにする
-        $title = preg_replace('/\s+/', ' ', $title);
+        $title = preg_replace('/\s+/u', ' ', $title);
         // 説明文を取得
         $subtitle = $child->children(1)->plaintext;
         // Alfredの結果リストに追加
